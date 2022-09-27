@@ -18,7 +18,9 @@ def personal_details():
     Pin = int(input("ENTER YOUR PINCODE :"))
     Dob =  input("ENTER YOUR BIRTH DATE :")
     Mail = input("ENTER YOUR MAIL ID :")
-
+    
+#display  details
+def display():
 
 #keeping a password
 def password():
@@ -29,4 +31,12 @@ def password():
         pass
     else:
         print("your password is not the same ")
+        
+
+#to show balance amount in tomato wallet
+def wallet():
+    amount = 0
+    print("your current balance for ordering is ", amount)
+    
+   
     
