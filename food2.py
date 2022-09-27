@@ -1,2 +1,0 @@
-
-def nearby_res():
