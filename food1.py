@@ -19,7 +19,7 @@ class front_page:
     
 #display  details
     def display(self):
-        print(self.name)
+        print(self.Name)
         print(self.Age)
         print(self.Address)
         print(self.Pin)
@@ -33,7 +33,7 @@ class front_page:
         self.pass1=input("ENTER YOUR PASSWORD:")
         self.pass2=input("ENTER YOUR PASSWORD ONCE AGAIN :")
         if(self.pass1==self.pass2):
-        pass
+            pass
         else:
             print("your password is not the same ")
         
@@ -41,13 +41,14 @@ class front_page:
 #to show balance amount in tomato wallet
     def wallet(self):
         self.amount = 0
-        print("your current balance for ordering is ", amount)
+        print("your current balance for ordering is ",self.amount)
         print("ADD BALANCE TO ENJOY YOUR TASTY FOOD ")
-        self.amount=input("do you want to add money to wallet (Y/N):")
-        if(self.amount == "Y"):
-            self.amount_1=int(input("HOW MUCH WOULD YOU LIKE TO ADD :"))
-            self.amoumt+=self.amount_1
-        elif(self.amount =="N"):
+        self.add_mon=input("do you want to add money to wallet (Y/N):")
+        if(self.add_mon == "Y"):
+            self.new_amount=int(input("HOW MUCH WOULD YOU LIKE TO ADD :"))
+            self.amount +=self.new_amount
+            print("YOUR CURRENT WALLET BALANCE IS ",self.amount,"rupees")
+        elif(self.add_mon == "N"):
             print("YOUR WALLET BALANCE IS ",self.amount)
 
     
