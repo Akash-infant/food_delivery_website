@@ -37,6 +37,7 @@ def password():
 def wallet():
     amount = 0
     print("your current balance for ordering is ", amount)
+    print("")
     
    
     
